@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto — MR CONSTRUÇÕES</title>
+  
+  <meta name="description" content="Detalhe e galeria fotográfica completa da obra executada pela MR Construções.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon Arquitetónico -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111215'/%3E%3Cpath d='M8 24V8h4l4 8 4-8h4v16h-3.5v-10l-3.5 7h-2l-3.5-7v10H8z' fill='%23FFFFFF'/%3E%3Crect x='22' y='21' width='3' height='3' fill='%23A8865D'/%3E%3C/svg%3E">
+
+  <!-- Folhas de Estilo -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/project-detail.css">
+</head>
+<body>
+
+  <!-- Barra Superior Técnica -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-locations">
+        <span>Lisboa</span>
+        <span class="top-bar-dot"></span>
+        <span>Cascais</span>
+        <span class="top-bar-dot"></span>
+        <span>Porto</span>
+        <span class="top-bar-dot"></span>
+        <span>Algarve</span>
+      </div>
+      <div class="top-bar-links">
+        <span>Alvará IMPIC Nº 84920</span>
+        <span class="top-bar-dot"></span>
+        <a href="tel:+351210998800">+351 210 998 800</a>
+        <span class="top-bar-dot"></span>
+        <a href="mailto:geral@mrconstrucoes.pt">geral@mrconstrucoes.pt</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cabeçalho Fixo -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html#inicio" class="brand" aria-label="MR Construções — Página Inicial">
+        <div class="brand-logo-icon">MR</div>
+        <div class="brand-text">
+          <span class="brand-title">MR Construções</span>
+          <span class="brand-subtitle">Arquitetura & Engenharia</span>
+        </div>
+      </a>
+
+      <nav class="nav-wrapper">
+        <ul class="nav-menu">
+          <li><a href="index.html#inicio" class="nav-link">Início</a></li>
+          <li><a href="index.html#projetos" class="nav-link active">Projetos</a></li>
+          <li><a href="index.html#servicos" class="nav-link">Serviços</a></li>
+          <li><a href="index.html#sobre-nos" class="nav-link">Sobre nós</a></li>
+          <li><a href="index.html#contactos" class="nav-link">Contactos</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-accent" data-open-budget-modal>
+          <span>Pedir orçamento</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Container onde a página do projeto é renderizada -->
+  <main class="project-detail-view is-active" id="standaloneProjectView" style="display: block; opacity: 1;">
+    <!-- Renderizado dinamicamente -->
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <div class="brand">
+            <div class="brand-logo-icon" style="border-color: #FFFFFF; color: #FFFFFF;">MR</div>
+            <div class="brand-text">
+              <span class="brand-title">MR Construções</span>
+              <span class="brand-subtitle">Arquitetura & Engenharia</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            Construção e remodelação de alto padrão com rigor técnico, pontualidade e acabamentos de excelência.
+          </p>
+        </div>
+
+        <div class="footer-nav-groups">
+          <div>
+            <div class="footer-nav-title">Navegação</div>
+            <ul class="footer-links-list">
+              <li class="footer-link-item"><a href="index.html#inicio">Início</a></li>
+              <li class="footer-link-item"><a href="index.html#projetos">Projetos</a></li>
+              <li class="footer-link-item"><a href="index.html#servicos">Serviços</a></li>
+              <li class="footer-link-item"><a href="index.html#sobre-nos">Sobre nós</a></li>
+              <li class="footer-link-item"><a href="index.html#contactos">Contactos</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="footer-nav-title">Garantias</div>
+            <ul class="footer-links-list">
+              <li class="footer-link-item">Alvará Nº 84920/IMPIC</li>
+              <li class="footer-link-item">Seguro de Obras & R.C.</li>
+              <li class="footer-link-item">Garantia Legal de 5 a 10 Anos</li>
+              <li class="footer-link-item">Certificação Energética A+</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 MR Construções. Todos os direitos reservados.</div>
+        <a href="index.html#projetos" class="back-to-top-btn">
+          <span>← Voltar a todos os projetos</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal de Orçamento -->
+  <div class="budget-modal-overlay" id="budgetModal" role="dialog" aria-modal="true">
+    <div class="budget-modal-box">
+      <button class="modal-close-btn" id="budgetModalClose" aria-label="Fechar janela">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div style="margin-bottom: 1.5rem;">
+        <span class="section-tag" style="color: var(--color-accent);">Orçamento Personalizado</span>
+        <h3 style="font-family: var(--font-display); font-size: 1.8rem; margin-top: 0.25rem;">
+          Pedir Orçamento de Obra
+        </h3>
+      </div>
+      <form id="modalBudgetForm">
+        <div class="form-group-row">
+          <div class="form-group">
+            <label class="form-label" style="color: var(--color-text-primary);" for="modalName">Nome Completo *</label>
+            <input type="text" id="modalName" class="form-control" style="background: var(--color-bg-alt); color: var(--color-text-primary); border-color: var(--color-border);" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" style="color: var(--color-text-primary);" for="modalPhone">Telefone *</label>
+            <input type="tel" id="modalPhone" class="form-control" style="background: var(--color-bg-alt); color: var(--color-text-primary); border-color: var(--color-border);" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" style="color: var(--color-text-primary);" for="modalEmail">Email *</label>
+          <input type="email" id="modalEmail" class="form-control" style="background: var(--color-bg-alt); color: var(--color-text-primary); border-color: var(--color-border);" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" style="color: var(--color-text-primary);" for="modalNotes">Mensagem</label>
+          <textarea id="modalNotes" class="form-control" style="background: var(--color-bg-alt); color: var(--color-text-primary); border-color: var(--color-border);" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-accent" style="width: 100%; padding: 1rem;">
+          <span>Enviar pedido de orçamento</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Scripts -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      let projectId = urlParams.get('id') || (window.location.hash ? window.location.hash.replace('#', '') : null);
+      
+      if (!projectId && window.PROJECTS_DATA && window.PROJECTS_DATA.length > 0) {
+        projectId = window.PROJECTS_DATA[0].id;
+      }
+
+      const project = window.PROJECTS_DATA.find(p => p.id === projectId) || window.PROJECTS_DATA[0];
+      if (project) {
+        document.title = `${project.title} — MR CONSTRUÇÕES`;
+        
+        // Instanciar ProjectViewManager direcionado para o container
+        const container = document.getElementById("standaloneProjectView");
+        const fakeMain = { style: {} };
+        const viewManager = new (class extends Object {
+          constructor() {
+            super();
+            this.detailView = container;
+            this.mainView = fakeMain;
+          }
+        })();
+        
+        // Copiar o método render do prototype
+        ProjectViewManager.prototype.render.call(viewManager, project);
+        
+        // Ajustar botão voltar
+        const backBtn = container.querySelector("#projectBackBtn");
+        if (backBtn) {
+          backBtn.addEventListener("click", () => {
+            window.location.href = "index.html#projetos";
+          });
+        }
+      }
+    });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
