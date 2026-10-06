@@ -1,638 +1,430 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
+
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MR CONSTRUÇÕES — Arquitetura, Construção e Remodelação Premium</title>
-  
-  <!-- Metadados de SEO & Otimização -->
-  <meta name="description" content="MR Construções — Especialistas em construção de moradias contemporâneas, reabilitação de edifícios e remodelações de alta gama em Portugal. Conheça o nosso portfólio de obras de excelência.">
-  <meta name="keywords" content="construção civil, arquitetura contemporânea, remodelação de luxo, reabilitação urbana, moradias lisboa, cascais, porto, obras chave na mão">
-  <meta name="author" content="MR Construções & Engenharia">
-  <meta name="robots" content="index, follow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="MR Construções - construção, remodelação e reparações em Famalicão, Porto e região.">
+    <title>MR Construções | Construção e Remodelação</title>
 
-  <!-- Open Graph & Social Sharing -->
-  <meta property="og:title" content="MR CONSTRUÇÕES — Obras de Excelência & Portfólio de Arquitetura">
-  <meta property="og:description" content="Construímos espaços. Criamos resultados. Portfólio visual de projetos residenciais e comerciais de alta gama.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="pt_PT">
 
-  <!-- Favicon Arquitetónico em SVG Vetorial -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111215'/%3E%3Cpath d='M8 24V8h4l4 8 4-8h4v16h-3.5v-10l-3.5 7h-2l-3.5-7v10H8z' fill='%23FFFFFF'/%3E%3Crect x='22' y='21' width='3' height='3' fill='%23A8865D'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
 
-  <!-- Folhas de Estilo -->
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/project-detail.css">
 
-  <!-- Schema.org Dados Estruturados -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "name": "MR Construções",
-    "description": "Construção de moradias de luxo, remodelação de interiores e reabilitação de património em Portugal.",
-    "telephone": "+351 210 998 800",
-    "email": "geral@mrconstrucoes.pt",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Avenida da Liberdade, 245",
-      "addressLocality": "Lisboa",
-      "postalCode": "1250-143",
-      "addressCountry": "PT"
-    },
-    "openingHours": "Mo-Fr 08:30-19:00"
-  }
-  </script>
+    <link rel="icon" type="image/png" href="imagens/logo-mr-construcoes.png">
+    <link rel="apple-touch-icon" href="imagens/logo-mr-construcoes.png">
+    <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="MR Construções - voltar ao início">
+            <img src="imagens/logo-mr-construcoes.png" alt="Logótipo MR Construções">
+            <span>MR<br>CONSTRUÇÕES</span>
+        </a>
 
-  <!-- Barra Superior Técnica / Contactos Rápidos -->
-  <div class="top-bar">
-    <div class="container">
-      <div class="top-bar-locations">
-        <span>Lisboa</span>
-        <span class="top-bar-dot"></span>
-        <span>Cascais</span>
-        <span class="top-bar-dot"></span>
-        <span>Porto</span>
-        <span class="top-bar-dot"></span>
-        <span>Algarve</span>
-      </div>
-      <div class="top-bar-links">
-        <span>Alvará IMPIC Nº 84920</span>
-        <span class="top-bar-dot"></span>
-        <a href="tel:+351210998800">+351 210 998 800</a>
-        <span class="top-bar-dot"></span>
-        <a href="mailto:geral@mrconstrucoes.pt">geral@mrconstrucoes.pt</a>
-      </div>
-    </div>
-  </div>
 
-  <!-- Cabeçalho & Navegação Fixa no Topo -->
-  <header class="site-header" id="siteHeader">
-    <div class="container header-inner">
-      <!-- Logótipo da Empresa -->
-      <a href="#inicio" class="brand" aria-label="MR Construções — Página Inicial">
-        <div class="brand-logo-icon">MR</div>
-        <div class="brand-text">
-          <span class="brand-title">MR Construções</span>
-          <span class="brand-subtitle">Arquitetura & Engenharia</span>
-        </div>
-      </a>
+        <nav class="nav" aria-label="Navegação principal">
+            <a href="#projetos">Projetos</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#empresa">Empresa</a>
+            <a href="#localizacao">Localização</a>
+            <a href="#contactos">Contactos</a>
+        </nav>
+    </header>
 
-      <!-- Menu de Navegação Desktop -->
-      <nav class="nav-wrapper" aria-label="Navegação Principal">
-        <ul class="nav-menu">
-          <li><a href="#inicio" class="nav-link active">Início</a></li>
-          <li>
-            <a href="#projetos" class="nav-link">
-              <span>Projetos</span>
-              <span class="nav-counter">08</span>
+
+    <main>
+        <section class="hero" id="inicio" aria-label="Projetos em destaque">
+            <div class="hero-slides">
+                <article class="hero-slide active" data-index="0">
+                    <img src="imagens/casa-banho-porto.jpg" alt="Remodelação de casa de banho no Porto">
+                </article>
+
+
+                <article class="hero-slide" data-index="1">
+                    <img src="imagens/piscina-famalicao.jpg" alt="Construção de piscina em Famalicão">
+                </article>
+
+
+                <article class="hero-slide" data-index="2">
+                    <img src="imagens/casa-famalicao-depois.jpg" alt="Casa remodelada em Famalicão">
+                </article>
+            </div>
+
+
+            <div class="hero-overlay"></div>
+
+
+            <div class="hero-topline">
+                <p id="slide-category">Remodelação</p>
+                <p id="slide-number">01 / 03</p>
+            </div>
+
+
+            <div class="hero-content">
+                <p class="hero-kicker">MR Construções</p>
+                <h1 id="slide-title">Casa de banho<br>Porto</h1>
+
+
+                <button class="details-button" id="details-button" type="button" aria-expanded="false">
+                    <span>+</span>
+                    <span>Ver detalhes</span>
+                </button>
+
+
+                <div class="project-details" id="project-details" aria-hidden="true">
+                    <p id="slide-description">
+                        Reestruturação completa de uma casa de banho, com atenção ao conforto,
+                        à funcionalidade e à qualidade dos acabamentos.
+                    </p>
+
+
+                    <a id="slide-link"
+                        href="https://www.facebook.com/photo?fbid=506328185295516&set=pb.100077550159685.-2207520000"
+                        target="_blank" rel="noopener noreferrer">
+                        Ver publicação no Facebook <span>↗</span>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="hero-controls" aria-label="Controlos dos projetos em destaque">
+                <button id="previous-slide" type="button" aria-label="Projeto anterior">←</button>
+                <button id="toggle-autoplay" type="button" aria-label="Pausar apresentação">Ⅱ</button>
+                <button id="next-slide" type="button" aria-label="Projeto seguinte">→</button>
+            </div>
+
+
+            <a class="scroll-prompt" href="#projetos">
+                <span>Descer para explorar</span>
+                <span aria-hidden="true">↓</span>
             </a>
-          </li>
-          <li><a href="#servicos" class="nav-link">Serviços</a></li>
-          <li><a href="#sobre-nos" class="nav-link">Sobre nós</a></li>
-          <li><a href="#contactos" class="nav-link">Contactos</a></li>
-        </ul>
-      </nav>
+        </section>
 
-      <!-- Botões de Ação do Header -->
-      <div class="header-actions">
-        <button class="btn btn-accent" data-open-budget-modal data-subject="Consulta Geral">
-          <span>Pedir orçamento</span>
-          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </button>
 
-        <!-- Botão Menu Mobile -->
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu de Navegação">
-          <span class="menu-toggle-bar"></span>
-          <span class="menu-toggle-bar"></span>
-          <span class="menu-toggle-bar"></span>
-        </button>
-      </div>
-    </div>
-  </header>
+        <section class="intro-section" id="empresa">
+            <p class="section-label">MR Construções</p>
 
-  <!-- Gaveta de Navegação Mobile -->
-  <div class="mobile-drawer" id="mobileDrawer">
-    <ul class="mobile-nav-list">
-      <li><a href="#inicio" class="mobile-nav-link">Início</a></li>
-      <li><a href="#projetos" class="mobile-nav-link">Projetos</a></li>
-      <li><a href="#servicos" class="mobile-nav-link">Serviços</a></li>
-      <li><a href="#sobre-nos" class="mobile-nav-link">Sobre nós</a></li>
-      <li><a href="#contactos" class="mobile-nav-link">Contactos</a></li>
-    </ul>
 
-    <div class="mobile-drawer-footer">
-      <button class="btn btn-accent" style="width: 100%; margin-bottom: 1.5rem;" data-open-budget-modal>
-        <span>Pedir orçamento</span>
-      </button>
-      <p style="margin-bottom: 0.5rem; color: #FFFFFF;">+351 210 998 800</p>
-      <p>geral@mrconstrucoes.pt</p>
-    </div>
-  </div>
+            <div class="intro-grid">
+                <h2>Construímos com rigor.<br>Renovamos com propósito.</h2>
 
-  <!-- =========================================================================
-       VISTA PRINCIPAL DO WEBSITE (HOME / PORTFÓLIO)
-       ========================================================================= -->
-  <div id="mainWebsiteView">
 
-    <!-- 1. HERO SECTION -->
-    <section class="hero" id="inicio">
-      <div class="hero-media-wrapper">
-        <img 
-          src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2200&q=85" 
-          alt="Obra de Moradia Contemporânea executada pela MR Construções" 
-          class="hero-image"
-          fetchpriority="high"
-        >
-        <div class="hero-overlay"></div>
-      </div>
+                <div>
+                    <p>
+                        A MR Construções acompanha cada obra desde o primeiro contacto até à
+                        entrega final. Trabalhamos com proximidade, planeamento e atenção aos
+                        detalhes que fazem a diferença.
+                    </p>
 
-      <div class="container hero-content">
-        <div class="hero-badge">
-          <span class="hero-badge-dot"></span>
-          <span>Construção & Arquitetura de Alto Padrão</span>
-        </div>
 
-        <h1 class="hero-headline">
-          <span>Construímos espaços.</span>
-          <span class="highlight-accent">Criamos resultados.</span>
-        </h1>
+                    <a class="text-link" href="#contactos">
+                        Falar connosco <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-        <p class="hero-description">
-          Construção e remodelação com foco na qualidade, detalhe e excelência.
-        </p>
 
-        <div class="hero-actions">
-          <a href="#projetos" class="btn btn-white">
-            <span>Ver projetos</span>
-            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <line x1="12" y1="5" x2="12" y2="19"></line>
-              <polyline points="19 12 12 19 5 12"></polyline>
-            </svg>
-          </a>
+        <section class="portfolio-section" id="projetos">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">Portfólio</p>
+                    <h2>Trabalhos realizados.</h2>
+                </div>
 
-          <a href="#contactos" class="btn btn-outline-white">
-            <span>Contactar</span>
-          </a>
-        </div>
-      </div>
 
-      <!-- Barra HUD Inferior do Hero -->
-      <div class="container hero-footer-bar">
-        <div class="hero-stats-group">
-          <div class="hero-stat-item">
-            <span class="hero-stat-val">+18</span>
-            <span class="hero-stat-lbl">Anos de Experiência</span>
-          </div>
-          <div class="hero-stat-item">
-            <span class="hero-stat-val">+150</span>
-            <span class="hero-stat-lbl">Obras Concluídas</span>
-          </div>
-          <div class="hero-stat-item">
-            <span class="hero-stat-val">100%</span>
-            <span class="hero-stat-lbl">Rigor de Prazos</span>
-          </div>
-        </div>
+                <p>
+                    Alguns exemplos de intervenções desenvolvidas pela MR Construções.
+                </p>
+            </div>
 
-        <a href="#projetos" class="hero-scroll-prompt">
-          <span>Explorar portfólio</span>
-          <div class="scroll-indicator-line"></div>
+
+            <div class="project-grid">
+                <article class="project-card project-card-large">
+                    <img src="imagens/casa-banho-porto.jpg" alt="Casa de banho remodelada no Porto" loading="lazy">
+
+
+                    <div class="project-card-content">
+                        <p>Remodelação - Porto</p>
+                        <h3>Casa de banho</h3>
+
+
+                        <a href="https://www.facebook.com/photo?fbid=506328185295516&set=pb.100077550159685.-2207520000"
+                            target="_blank" rel="noopener noreferrer">
+                            Ver projeto <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+
+                <article class="project-card">
+                    <img src="imagens/piscina-famalicao.jpg" alt="Piscina construída em Famalicão" loading="lazy">
+
+
+                    <div class="project-card-content">
+                        <p>Construção exterior - Famalicão</p>
+                        <h3>Construção de piscina</h3>
+
+
+                        <a href="https://www.facebook.com/photo.php?fbid=310790821515921&set=pb.100077550159685.-2207520000&type=3"
+                            target="_blank" rel="noopener noreferrer">
+                            Ver projeto <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+
+            <article class="before-after">
+                <div class="before-after-copy">
+                    <p class="section-label">Transformação</p>
+                    <h3>Antes e depois</h3>
+
+
+                    <p>
+                        Uma intervenção numa habitação em Famalicão, pensada para melhorar
+                        a imagem, o conforto e a utilização do espaço.
+                    </p>
+
+
+                    <p class="drag-note">
+                        Arraste o controlo sobre a imagem para comparar.
+                    </p>
+                </div>
+
+
+                <div class="comparison" id="comparison" style="--position: 50%;">
+                    <img class="comparison-after" src="imagens/casa-famalicao-depois.jpg"
+                        alt="Depois da remodelação de uma casa em Famalicão" loading="lazy">
+
+
+                    <div class="comparison-before-wrap" id="comparison-before-wrap">
+                        <img class="comparison-before" src="imagens/casa-famalicao-antes.jpg"
+                            alt="Antes da remodelação de uma casa em Famalicão" loading="lazy">
+                    </div>
+
+
+                    <span class="comparison-label before-label">Antes</span>
+                    <span class="comparison-label after-label">Depois</span>
+
+
+                    <input class="comparison-range" id="comparison-range" type="range" min="0" max="100" value="50"
+                        aria-label="Comparar imagem antes e depois">
+
+
+                    <div class="comparison-handle" id="comparison-handle" aria-hidden="true">
+                        <span>↔</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+        <section class="location-section" id="localizacao">
+            <div class="location-details">
+                <p class="section-label">Empresa e localização</p>
+                <h2>Construção com presença local.</h2>
+
+
+                <div class="company-info">
+                    <p><strong>Empresa</strong><br>Marco Paulo Ribeiro Unipessoal, Lda</p>
+                    <p><strong>Marca</strong><br>MR Construções</p>
+                    <p><strong>Fundada em</strong><br>2021</p>
+                </div>
+
+
+                <address>
+                    <strong>Sede</strong><br>
+                    Rua do Casino nº 94 E<br>
+                    4765-063 Bairro, Vila Nova de Famalicão
+                </address>
+
+
+                <a class="map-link"
+                    href="https://www.google.com/maps/search/?api=1&query=Rua%20do%20Casino%2094%20E%2C%204765-063%20Bairro%2C%20Vila%20Nova%20de%20Famalic%C3%A3o"
+                    target="_blank" rel="noopener noreferrer">
+                    Abrir no Google Maps <span>↗</span>
+                </a>
+            </div>
+
+
+            <div class="map-container">
+                <iframe title="Localização da MR Construções em vista satélite"
+                    src="https://maps.google.com/maps?q=Rua%20do%20Casino%2094%20E%2C%204765-063%20Bairro%2C%20Vila%20Nova%20de%20Famalic%C3%A3o&t=k&z=17&output=embed"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+        </section>
+
+
+        <section class="services-section" id="servicos">
+            <p class="section-label">Serviços</p>
+            <h2>Da ideia à entrega da obra.</h2>
+
+
+            <div class="services-grid">
+                <article>
+                    <span>01</span>
+                    <h3>Construção</h3>
+                    <p>
+                        Moradias, ampliações, estruturas e pequenas construções, com
+                        acompanhamento em todas as fases.
+                    </p>
+                </article>
+
+
+                <article>
+                    <span>02</span>
+                    <h3>Remodelação</h3>
+                    <p>
+                        Renovação de casas, apartamentos, cozinhas, casas de banho e espaços
+                        comerciais.
+                    </p>
+                </article>
+
+
+                <article>
+                    <span>03</span>
+                    <h3>Reparação</h3>
+                    <p>
+                        Intervenções em coberturas, fachadas, infiltrações, pinturas,
+                        canalização e manutenção.
+                    </p>
+                </article>
+            </div>
+
+
+            <div class="services-specialties">
+                <div class="specialties-header">
+                    <div>
+                        <p class="section-label">Especialidades e Áreas de Atuação</p>
+                        <h3>Soluções completas para cada etapa do seu projeto</h3>
+                    </div>
+                </div>
+
+
+                <div class="specialties-grid">
+                    <article class="specialty-card">
+                        <span class="specialty-index">01</span>
+                        <h4>Construção Geral</h4>
+                        <p>Obras residenciais e comerciais de raiz, com planeamento e acompanhamento técnico rigoroso.
+                        </p>
+                    </article>
+
+
+                    <article class="specialty-card">
+                        <span class="specialty-index">02</span>
+                        <h4>Pintura</h4>
+                        <p>Pinturas de interiores e exteriores, preparação minuciosa e revestimentos de elevada
+                            durabilidade.</p>
+                    </article>
+
+
+                    <article class="specialty-card">
+                        <span class="specialty-index">03</span>
+                        <h4>Reabilitação</h4>
+                        <p>Recuperação e modernização de imóveis, preservando a identidade e valorizando o espaço
+                            construído.</p>
+                    </article>
+
+
+                    <article class="specialty-card">
+                        <span class="specialty-index">04</span>
+                        <h4>Acabamentos</h4>
+                        <p>Pavimentos, revestimentos cerâmicos, tetos falsos, carpintarias e pormenores de alto padrão.
+                        </p>
+                    </article>
+
+
+                    <article class="specialty-card">
+                        <span class="specialty-index">05</span>
+                        <h4>Alvenaria</h4>
+                        <p>Construção de paredes exteriores e interiores, muros de suporte, divisórias e assentamento
+                            preciso.</p>
+                    </article>
+
+
+                    <article class="specialty-card">
+                        <span class="specialty-index">06</span>
+                        <h4>Fachadas e Isolamentos (Sistema ETICS)</h4>
+                        <p>Isolamento térmico pelo exterior (capoto), impermeabilização e máxima eficiência energética.
+                        </p>
+                    </article>
+
+
+                    <article class="specialty-card">
+                        <span class="specialty-index">07</span>
+                        <h4>Telhados</h4>
+                        <p>Construção, reparação, substituição e impermeabilização integral de coberturas e caleiras.
+                        </p>
+                    </article>
+
+
+                    <article class="specialty-card">
+                        <span class="specialty-index">08</span>
+                        <h4>Estrutura</h4>
+                        <p>Estruturas em betão armado, ferro e reforços estruturais com garantia total de solidez e
+                            segurança.</p>
+                    </article>
+
+
+                    <article class="specialty-card">
+                        <span class="specialty-index">09</span>
+                        <h4>Execução Integral de Edifícios</h4>
+                        <p>Gestão e execução de obras "chave na mão", desde as fundações até aos acabamentos finais.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact-section" id="contactos">
+            <p class="section-label">Contactos</p>
+            <h2>Tem uma obra<br>em mente?</h2>
+
+
+            <p>
+                Fale connosco para analisar o seu projeto e pedir um orçamento.
+            </p>
+
+
+            <div class="contact-links">
+                <a href="tel:+351915680947">915 680 947 <span>↗</span></a>
+                <a href="mailto:mrconstrucoes@sapo.pt">mrconstrucoes@sapo.pt <span>↗</span></a>
+                <a href="https://www.instagram.com/mr_construcoes/" target="_blank" rel="noopener noreferrer">
+                    Instagram @mr_construcoes <span>↗</span>
+                </a>
+                <a href="https://www.facebook.com/p/MR-Constru%C3%A7%C3%B5es-100077550159685/" target="_blank"
+                    rel="noopener noreferrer">
+                    Facebook <span>↗</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <a class="footer-brand" href="#inicio">
+            <img src="imagens/logo-mr-construcoes.png" alt="Logótipo MR Construções" aria-hidden="true">
+            <span>MR CONSTRUÇÕES</span>
         </a>
-      </div>
-    </section>
-
-    <!-- 2. PORTFÓLIO DE PROJETOS (SECÇÃO PRINCIPAL DO SITE) -->
-    <section class="section" id="projetos">
-      <div class="container">
-        
-        <!-- Cabeçalho e Filtros do Portfólio -->
-        <div class="portfolio-header-wrapper">
-          <div class="section-header" style="margin-bottom: 0;">
-            <span class="section-tag">Portfólio de Obras</span>
-            <h2 class="section-title">Projetos</h2>
-            <p class="section-subtitle">Uma seleção dos nossos trabalhos.</p>
-          </div>
-
-          <!-- Filtros de Tipologia -->
-          <div class="portfolio-filters" role="group" aria-label="Filtrar projetos por categoria">
-            <button class="filter-btn is-active" data-filter="todos">Todos</button>
-            <button class="filter-btn" data-filter="construcao">Construção</button>
-            <button class="filter-btn" data-filter="remodelacao">Remodelação</button>
-            <button class="filter-btn" data-filter="reabilitacao">Reabilitação</button>
-            <button class="filter-btn" data-filter="interiores">Interiores</button>
-            <button class="filter-btn" data-filter="exteriores">Exteriores</button>
-          </div>
-        </div>
-
-        <!-- Grelha Editorial de Projetos (Renderizada Dinamicamente via JavaScript) -->
-        <div class="editorial-gallery" id="portfolioGrid">
-          <!-- Os projetos serão injetados aqui a partir de projects-data.js -->
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 3. SERVIÇOS -->
-    <section class="section section-alt" id="servicos">
-      <div class="container">
-        
-        <div class="section-header">
-          <span class="section-tag">Áreas de Especialização</span>
-          <h2 class="section-title">Serviços</h2>
-          <p class="section-subtitle">
-            Acompanhamento integral desde o estudo prévio e licenciamento até à entrega final da chave.
-          </p>
-        </div>
-
-        <!-- Grelha Visual de Serviços -->
-        <div class="services-grid" id="servicesGrid">
-          <!-- Os serviços serão injetados aqui a partir de services-data -->
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 4. SOBRE NÓS -->
-    <section class="section" id="sobre-nos">
-      <div class="container">
-        
-        <div class="about-grid">
-          <!-- Fotografia Editorial da Equipa / Rigor Construtivo -->
-          <div class="about-media-col reveal-on-scroll">
-            <img 
-              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80" 
-              alt="Engenharia e fiscalização de obra rigorosa da MR Construções" 
-              class="about-image-main"
-              loading="lazy"
-            >
-            <div class="about-floating-badge">
-              <div class="about-floating-val">+18</div>
-              <div class="about-floating-lbl">Anos a erguer projetos de referência em Portugal</div>
-            </div>
-          </div>
-
-          <!-- Texto Editorial de Posicionamento -->
-          <div class="about-content-col reveal-on-scroll delay-1">
-            <span class="section-tag">A Nossa Filosofia</span>
-            <h2 class="section-title" style="margin-bottom: 1.25rem;">
-              Construção com Rigor, Qualidade e Paixão pelo Detalhe.
-            </h2>
-
-            <p class="about-lead">
-              Acreditamos que cada obra é uma peça singular de arquitetura que exige um compromisso inegociável com a excelência técnica.
-            </p>
-
-            <p class="about-text">
-              Na MR Construções, transformamos projetos de arquitetura arrojados em realidades sólidas e duradouras. Trabalhamos em estreita colaboração com os mais prestigiados gabinetes de arquitetura e clientes exigentes, garantindo transparência nos custos, cumprimento rigoroso de prazos e mestria artesanal nos acabamentos.
-            </p>
-
-            <!-- Pilares de Excelência -->
-            <div class="about-pillars">
-              <div class="pillar-item">
-                <h4 class="pillar-title">Atenção ao Detalhe</h4>
-                <p class="pillar-desc">Tolerâncias milimétricas em caixilharias, cantarias e carpintarias finas.</p>
-              </div>
-              <div class="pillar-item">
-                <h4 class="pillar-title">Rigor & Transparência</h4>
-                <p class="pillar-desc">Autonomia de gestão, relatórios semanais de obra e orçamentos fechados.</p>
-              </div>
-            </div>
-
-            <div>
-              <button class="btn btn-primary" data-open-budget-modal data-subject="Parceria / Consulta">
-                <span>Falar com a nossa equipa</span>
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Métricas / Números da Empresa -->
-        <div class="metrics-strip reveal-on-scroll">
-          <div class="metric-box">
-            <div class="metric-number">+18</div>
-            <div class="metric-label">Anos de Experiência</div>
-            <div class="metric-sub">Sólida presença no mercado de construção</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-number">+150</div>
-            <div class="metric-label">Projetos Realizados</div>
-            <div class="metric-sub">Moradias, palacetes e edifícios concluídos</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-number">100%</div>
-            <div class="metric-label">Rigor de Prazos</div>
-            <div class="metric-sub">Planeamento cronológico detalhado</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-number">+98%</div>
-            <div class="metric-label">Clientes & Arquitetos Satisfeitos</div>
-            <div class="metric-sub">Relações de confiança continuada</div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- 5. CONTACTOS & PEDIDO DE ORÇAMENTO -->
-    <section class="section section-dark" id="contactos">
-      <div class="container">
-        
-        <div class="contacts-grid">
-          
-          <!-- Informações de Contacto & Localização -->
-          <div class="contact-info-panel reveal-on-scroll">
-            <span class="section-tag" style="color: var(--color-accent);">Comece Hoje</span>
-            <h2 class="contact-headline">Vamos construir o seu próximo projeto.</h2>
-            <p class="contact-lead">
-              Entre em contacto connosco para conhecer melhor os nossos serviços ou solicitar um orçamento detalhado.
-            </p>
-
-            <div class="contact-channels">
-              <div class="channel-item">
-                <div class="channel-icon-box">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <div class="channel-label">Telefone Direto</div>
-                  <div class="channel-value"><a href="tel:+351210998800">+351 210 998 800</a> / <a href="tel:+351912345678">+351 912 345 678</a></div>
-                </div>
-              </div>
-
-              <div class="channel-item">
-                <div class="channel-icon-box">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                  </svg>
-                </div>
-                <div>
-                  <div class="channel-label">Correio Eletrónico</div>
-                  <div class="channel-value"><a href="mailto:geral@mrconstrucoes.pt">geral@mrconstrucoes.pt</a></div>
-                </div>
-              </div>
-
-              <div class="channel-item">
-                <div class="channel-icon-box">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                    <circle cx="12" cy="10" r="3"></circle>
-                  </svg>
-                </div>
-                <div>
-                  <div class="channel-label">Sede & Escritórios</div>
-                  <div class="channel-value">Avenida da Liberdade, 245, 4º Andar, 1250-143 Lisboa</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- WhatsApp & Redes Sociais -->
-            <div style="margin-bottom: 1.5rem;">
-              <a 
-                href="https://wa.me/351912345678?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20informa%C3%A7%C3%B5es%20sobre%20uma%20obra" 
-                target="_blank" 
-                rel="noopener" 
-                class="btn btn-outline-white" 
-                style="display: inline-flex; margin-bottom: 1.5rem;"
-              >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
-                </svg>
-                <span>Falar via WhatsApp</span>
-              </a>
-            </div>
-
-            <div class="contact-social-row">
-              <a href="https://instagram.com" target="_blank" rel="noopener" class="social-pill">Instagram</a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-pill">LinkedIn</a>
-              <a href="https://archdaily.com" target="_blank" rel="noopener" class="social-pill">ArchDaily</a>
-            </div>
-          </div>
-
-          <!-- Formulário de Contacto & Pedido de Orçamento -->
-          <div class="contact-form-card reveal-on-scroll delay-1">
-            <h3 style="font-family: var(--font-display); font-size: 1.5rem; color: #FFFFFF; margin-bottom: 0.5rem;">
-              Solicitar Proposta de Obra
-            </h3>
-            <p style="font-size: 0.9rem; color: var(--color-text-light-muted); margin-bottom: 2rem;">
-              Preencha os campos abaixo. Entraremos em contacto para agendar uma reunião ou visita técnica.
-            </p>
-
-            <form id="contactMainForm">
-              <div class="form-group-row">
-                <div class="form-group">
-                  <label for="contactName" class="form-label">Nome Completo *</label>
-                  <input type="text" id="contactName" class="form-control" placeholder="Seu nome ou empresa" required>
-                </div>
-                <div class="form-group">
-                  <label for="contactEmail" class="form-label">Email *</label>
-                  <input type="email" id="contactEmail" class="form-control" placeholder="nome@exemplo.pt" required>
-                </div>
-              </div>
-
-              <div class="form-group-row">
-                <div class="form-group">
-                  <label for="contactPhone" class="form-label">Telefone / Telemóvel *</label>
-                  <input type="tel" id="contactPhone" class="form-control" placeholder="+351 900 000 000" required>
-                </div>
-                <div class="form-group">
-                  <label for="contactService" class="form-label">Tipo de Obra</label>
-                  <select id="contactService" class="form-control">
-                    <option value="construcao">Construção de Raiz</option>
-                    <option value="remodelacao">Remodelação Integral</option>
-                    <option value="reabilitacao">Reabilitação Urbana</option>
-                    <option value="interiores">Acabamentos & Interiores</option>
-                    <option value="comercial">Espaço Comercial / Escritórios</option>
-                    <option value="outro">Outro Tipo de Projeto</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="contactMessage" class="form-label">Mensagem & Descrição do Projeto *</label>
-                <textarea id="contactMessage" class="form-control" placeholder="Indique a localização prevista, área estimada ou características pretendidas para o seu projeto..." required></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-accent form-submit-btn">
-                <span>Enviar pedido</span>
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </button>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-  </div><!-- /mainWebsiteView -->
 
 
-  <!-- =========================================================================
-       VISTA DEDICADA DA PÁGINA INDIVIDUAL DO PROJETO
-       (Renderizada e gerida via js/project-view.js)
-       ========================================================================= -->
-  <main class="project-detail-view" id="projectDetailView" tabindex="-1">
-    <!-- Conteúdo gerado dinamicamente -->
-  </main>
+        <p>Construção, remodelação e reparações.</p>
+        <p>© <span id="current-year"></span> MR Construções</p>
+    </footer>
 
 
-  <!-- Rodapé Institucional -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand-col">
-          <div class="brand">
-            <div class="brand-logo-icon" style="border-color: #FFFFFF; color: #FFFFFF;">MR</div>
-            <div class="brand-text">
-              <span class="brand-title">MR Construções</span>
-              <span class="brand-subtitle">Arquitetura & Engenharia</span>
-            </div>
-          </div>
-          <p class="footer-tagline">
-            Construção e remodelação de alto padrão com rigor técnico, pontualidade e acabamentos de excelência.
-          </p>
-        </div>
-
-        <div class="footer-nav-groups">
-          <div>
-            <div class="footer-nav-title">Navegação</div>
-            <ul class="footer-links-list">
-              <li class="footer-link-item"><a href="#inicio">Início</a></li>
-              <li class="footer-link-item"><a href="#projetos">Projetos</a></li>
-              <li class="footer-link-item"><a href="#servicos">Serviços</a></li>
-              <li class="footer-link-item"><a href="#sobre-nos">Sobre nós</a></li>
-              <li class="footer-link-item"><a href="#contactos">Contactos</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <div class="footer-nav-title">Especialidades</div>
-            <ul class="footer-links-list">
-              <li class="footer-link-item"><a href="#projetos">Moradias Contemporâneas</a></li>
-              <li class="footer-link-item"><a href="#projetos">Reabilitação Histórica</a></li>
-              <li class="footer-link-item"><a href="#projetos">Penthouses & Interiores</a></li>
-              <li class="footer-link-item"><a href="#projetos">Espaços Corporativos</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <div class="footer-nav-title">Garantias</div>
-            <ul class="footer-links-list">
-              <li class="footer-link-item">Alvará Nº 84920/IMPIC</li>
-              <li class="footer-link-item">Seguro de Obras & R.C.</li>
-              <li class="footer-link-item">Garantia Legal de 5 a 10 Anos</li>
-              <li class="footer-link-item">Certificação Energética A+</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div>
-          &copy; 2026 MR Construções. Todos os direitos reservados.
-        </div>
-        <a href="#inicio" class="back-to-top-btn" id="backToTopBtn">
-          <span>Voltar ao topo</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="12" y1="19" x2="12" y2="5"></line>
-            <polyline points="5 12 12 5 19 12"></polyline>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </footer>
-
-
-  <!-- Modal Interativo: "Pedir Orçamento" -->
-  <div class="budget-modal-overlay" id="budgetModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="budget-modal-box">
-      <button class="modal-close-btn" id="budgetModalClose" aria-label="Fechar janela">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
-
-      <div style="margin-bottom: 1.5rem;">
-        <span class="section-tag" style="color: var(--color-accent);">Orçamento Personalizado</span>
-        <h3 id="modalTitle" style="font-family: var(--font-display); font-size: 1.8rem; margin-top: 0.25rem;">
-          Pedir Orçamento de Obra
-        </h3>
-        <p style="font-size: 0.92rem; color: var(--color-text-secondary); margin-top: 0.25rem;">
-          Indique-nos os detalhes essenciais da sua futura obra para prepararmos uma estimativa inicial.
-        </p>
-      </div>
-
-      <form id="modalBudgetForm">
-        <div class="form-group-row">
-          <div class="form-group">
-            <label class="form-label" style="color: var(--color-text-primary);" for="modalName">Nome Completo *</label>
-            <input type="text" id="modalName" class="form-control" style="background: var(--color-bg-alt); color: var(--color-text-primary); border-color: var(--color-border);" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label" style="color: var(--color-text-primary);" for="modalPhone">Contacto Telefónico *</label>
-            <input type="tel" id="modalPhone" class="form-control" style="background: var(--color-bg-alt); color: var(--color-text-primary); border-color: var(--color-border);" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="form-label" style="color: var(--color-text-primary);" for="modalEmail">Email *</label>
-          <input type="email" id="modalEmail" class="form-control" style="background: var(--color-bg-alt); color: var(--color-text-primary); border-color: var(--color-border);" required>
-        </div>
-
-        <div class="form-group-row">
-          <div class="form-group">
-            <label class="form-label" style="color: var(--color-text-primary);" for="modalType">Tipo de Intervenção</label>
-            <select id="modalType" class="form-control" style="background: var(--color-bg-alt); color: var(--color-text-primary); border-color: var(--color-border);">
-              <option value="construcao">Construção de Moradia / Edifício</option>
-              <option value="remodelacao">Remodelação Integral</option>
-              <option value="reabilitacao">Reabilitação Patrimonial</option>
-              <option value="interiores">Acabamentos de Alta Gama</option>
-              <option value="comercial">Espaço Comercial / Corporativo</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label" style="color: var(--color-text-primary);" for="modalArea">Área Aproximada (m²)</label>
-            <input type="text" id="modalArea" class="form-control" placeholder="Ex: 250 m²" style="background: var(--color-bg-alt); color: var(--color-text-primary); border-color: var(--color-border);">
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="form-label" style="color: var(--color-text-primary);" for="modalProjectNotes">Detalhes ou Observações</label>
-          <textarea id="modalProjectNotes" class="form-control" placeholder="Descreva sucintamente o objetivo do projeto..." style="background: var(--color-bg-alt); color: var(--color-text-primary); border-color: var(--color-border); min-height: 80px;"></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-accent" style="width: 100%; padding: 1.1rem; margin-top: 0.5rem;">
-          <span>Enviar pedido de orçamento</span>
-        </button>
-      </form>
-    </div>
-  </div>
-
-  <!-- Container de Toasts para Notificações -->
-  <div class="toast-container" id="toastContainer"></div>
-
-  <!-- Scripts JavaScript em Ordem de Dependência -->
-  <script src="js/projects-data.js"></script>
-  <script src="js/lightbox.js"></script>
-  <script src="js/portfolio.js"></script>
-  <script src="js/project-view.js"></script>
-  <script src="js/main.js"></script>
+    <script src="script.js"></script>
 </body>
+
+
 </html>
