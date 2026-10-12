@@ -1,3 +1,8 @@
+/* ==========================================================================
+   MR CONSTRUÇÕES — JavaScript
+   Slider, Comparação, Animações de Scroll, Header dinâmico
+   ========================================================================== */
+
 const projects = [
     {
         category: "Remodelação",
@@ -171,3 +176,84 @@ document.getElementById("current-year").textContent = new Date().getFullYear();
 
 showSlide(0);
 startAutoplay();
+
+
+/* ==========================================================================
+   SCROLL REVEAL — Intersection Observer
+   Anima elementos com classes .reveal, .reveal-left, .reveal-right, .reveal-scale
+   ========================================================================== */
+(function initScrollReveal() {
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+
+    if (!revealElements.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.12,
+        rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach((el) => observer.observe(el));
+})();
+
+
+/* ==========================================================================
+   HEADER — Efeito de scroll (glassmorphism ao rolar)
+   ========================================================================== */
+(function initHeaderScroll() {
+    const header = document.querySelector('.site-header');
+    if (!header) return;
+
+    let ticking = false;
+
+    function updateHeader() {
+        if (window.scrollY > 60) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(updateHeader);
+            ticking = true;
+        }
+    }, { passive: true });
+
+    updateHeader();
+})();
+
+
+/* ==========================================================================
+   SMOOTH ANCHOR SCROLL — Override para links internos
+   ========================================================================== */
+(function initSmoothAnchors() {
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+
+            const target = document.querySelector(targetId);
+            if (!target) return;
+
+            e.preventDefault();
+
+            const headerOffset = 80;
+            const elementPosition = target.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = elementPosition - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        });
+    });
+})();
